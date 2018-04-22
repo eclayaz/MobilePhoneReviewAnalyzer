@@ -139,7 +139,8 @@ public class Ontology {
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 				
-				return soln.getLiteral("avg").getDouble();
+				if(soln.getLiteral("avg") != null)
+					return soln.getLiteral("avg").getDouble();
 			}
 		} finally {
 			qexec.close();
