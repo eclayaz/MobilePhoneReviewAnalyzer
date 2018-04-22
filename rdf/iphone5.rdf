@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:c="http://review-analyzer.local/ontologies/mobile_phone.owl#"
+	  xmlns:base="http://review-analyzer.local/ontologies/mobile_phone.owl#"
+	  >
+	  
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>4 months after I got the phone the screen stopped working. No touch screen. It was obvious when I recieved it that the screen had been replaced, I'm guessing it was cheaply done. Do not recommend.</c:review>
+    <c:rating>0</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The screen was perfect, colors are amazing!</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>Phone works great but the screen was/is cracked when I opened the package.</c:review>
+    <c:rating>0</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>screen keeps poping out. Please contact me ASAP</c:review>
+    <c:rating>0</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>Great exterior condition. Screen is streaked with pink lines.</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>It worked great for about a month and now the screen will go black for no reason and it won't lock. To make the screen not black anymore I have to hit the middle button even if I'm on the home page.</c:review>
+    <c:rating>1</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The case was more beat up than expected. We had to remove the screen and unplug and re-plug the 3 screen connections several times to get it to respond consistently, but other than that it's an iPhone and seems to work; now the screen is failing more often and it is past the 30 day warranty, we will likely need to replace it or the phone. Big bummer</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The screen was acting like it was possessed or a chipmunk on rd caffeine. The phone itself is great but that touchscreen thing, REALLY needs to be fixed. As well as on their future models.</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I bought this for my daughters birthday gift. I am having to send it back the day after her birthday. The screen backlight is jacked up. The touch screen does not work. I cannot even slide to unlock the phone because the screen won't work. Totally pissed and disappointed this is total bulls*** that i paid almost $200 just to have to return it and not to mention the sadness of my child that I am returning her birthday gift, and now have to wait to send this one back.</c:review>
+    <c:rating>1</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>Screen is smaller than every Android phone at the price, but quality-wise it’s excellent.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>It’s a top-quality IPS panel that offers superb colour reproduction, excellent contrast and startling peak brightness.</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>screen</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The iPhone 5C uses a 1,136 x 640 pixel screen. The resulting 326ppi pixel density is the same pixel pitch that saw the introduction of the term ‘Retina’ display – meaning so sharp you can’t see the pixels.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>retina</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I am NOT a technology person, and I didn't understand the "No SIM card" thing. I had no clue that it was a needed thing for my phone. However, I took my phone to Verizon to get it activated and they just gave me one, no problem, no charge. It was simple.THANK YOU VERY MUCH, for the great service and the phone.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>sim</c:isAbout>
+</rdf:Description>
+
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>Please contact me, when I received the phone the camera was messed up</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I found that the iPhone 5C is far better suited to shooting photos when held in portrait, with icons easier to reach and the volume keys which double as shutter buttons perfectly placed for my fingers.</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The bigger issue here though is with your stray fingers getting in the way of the camera lens. If the camera had been centralised this wouldn't be an issue</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>the lens is plonked right in the corner I did have some pink splodges in the corner of a few of my shots.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I did find that some of my images did look a little washed out at times and there was a general lack of vibrancy if I'm being really picky.</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I was able to turn out some impressive shots with the iPhone 5C, with it managing to deal with expansive landscapes and depth of field just as easily as up close macro shots.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The FaceTime camera on the front of the device is better than the one found in the iPhone 5, offering up better visibility in low-light.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>front_camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The camera on the back of the iPhone 5c features the same 8Mp sensor, 3264x2448, backside illuminated, hybrid IR filter, five-element lens, and f/2.4 aperture as the iPhone 5 did.</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>back_camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>If your current camera is an iPhone 4S or older you will notice a marked difference. The iPhone 5c (or iPhone 5) camera offers faster photo capture, better low-light performance and improved noise reduction compared to those previous models. HDR captures are also faster when compared to older iPhones.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>camera</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>the iPhone 5c (and iPhone 5s) feature a 4in Retina display as opposed to the 3.5in display of the older models. Being 176 pixels taller means the display offers a 16:9 aspect ratio – which is the same as an HDTV.</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>retina</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>These new iPhones feature a better pixel density and resolution, providing you with a better visual experience.</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>display</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>4in display is designed so that you can hold the iPhone in your hand and reach all parts of the screen comfortably. You can't do this with a bigger display unless you have bigger hands, so if one-handed use is important to you then the iPhone 5c's display will be the perfect size for most.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>display</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The iPhone 5c's display is pretty crisp, with a 326ppi display at a resolution of 1136x640 pixels.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>display</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>If I talk on the phone for more than 10 minutes it dies then sometimes it dies even if I'm not using it..sometimes it can have 95% and it will die...The only reason why I haven't sent it back yet is due to the fact that my job requires me to have a phone so going even two days without it will disturb my job...so all day it stays on the charger even if I'm at work if I'm sleeping when I'm in the car if I talk more than two minutes it has to be on the charge so it won't die...physically the phone it looks great as described no broken screen no cracks is just the battery.</c:review>
+    <c:rating>1</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>The phone works great. It has minor scratches as it was used, but works fine. The battery life is short lived and needs charging daily, but overall it's good.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>Apple reckons you'll be able to eek out 10 hours video playback on the iPhone 5C or 40 hours of audio, the same as the iPhone 5, but these are best case scenarios.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>You'll still need to plug in and recharge overnight, but if you're just using the phone for calls, texts, emails and a bit of web browsing you won't be caught short.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>if you fancy turning brightness up to full whack and then fire up some power-intensive games you'll see that battery drain pretty quickly, but the iPhone 5C still performs better here than the 5.</c:review>
+    <c:rating>1</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I took the iPhone 5C for a spin as a sat nav - a process which usually drains phone batteries in no time at all, but the two hour journey saw a drop of 30%.</c:review>
+    <c:rating>2</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>I ran a 90 minute HD video at full brightness on the iPhone 5C, with various accounts syncing in the background and it saw a drop of 26% in battery life.</c:review>
+    <c:rating>3</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+<rdf:Description  rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl#Review">
+	<c:phone>iphone5c</c:phone>
+    <c:review>it offers 10 hours of web browsing on Wi-Fi and LTE networks, up to 8 hours on 3G networks, and up to 10 hours of video playback and up to 40 hours of audio playback.</c:review>
+    <c:rating>4</c:rating>
+    <c:isAbout>battery</c:isAbout>
+</rdf:Description>
+
+</rdf:RDF>

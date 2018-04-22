@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:c="http://review-analyzer.local/ontologies/reviews_2.owl#"
+	  xmlns:base="http://review-analyzer.local/ontologies/reviews_2.owl#"
+	  >
+
+<rdf:Description  rdf:about="c:display">
+	<c:phone>iPhone5</c:phone>
+	<c:price>355</c:price>
+	<c:brand>iPhone5</c:brand>
+    <c:review>Display looks amazing!</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>amoled</c:isAbout>
+</rdf:Description>
+<rdf:Description rdf:about="c:me">
+	<c:phone>iPhone5</c:phone>
+	<c:price>355</c:price>
+	<c:brand>iPhone5</c:brand>
+    <c:review>Display is great!</c:review>
+    <c:rating>5</c:rating>
+    <c:isAbout>amoled</c:isAbout>
+</rdf:Description>
+</rdf:RDF>

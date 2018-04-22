@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:reviews_2="http://review-analyzer.local/ontologies/reviews_2.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Body">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Feature"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="front">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Camera"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Memory">
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Display">
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Camera">
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Review"/>
+  <owl:Class rdf:ID="Platform">
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:ID="isAbout">
+    <rdfs:domain rdf:resource="#Review"/>
+    <rdfs:range rdf:resource="#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="type">
+    <rdfs:domain rdf:resource="#Feature"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="comment">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Review"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="rating">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="#Review"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <reviews_2:Review rdf:ID="review">
+    <reviews_2:isAbout>
+      <reviews_2:Display rdf:ID="amoled">
+        <reviews_2:type>amoled</reviews_2:type>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </reviews_2:Display>
+    </reviews_2:isAbout>
+    <reviews_2:comment>great</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <reviews_2:Review rdf:ID="xx2">
+    <reviews_2:isAbout>
+      <reviews_2:front rdf:ID="frontCamera">
+        <reviews_2:type>front camera</reviews_2:type>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </reviews_2:front>
+    </reviews_2:isAbout>
+    <reviews_2:comment>fghjk</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <reviews_2:Battery rdf:ID="Battery">
+        <reviews_2:type>battery</reviews_2:type>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:subClassOf rdf:resource="#Feature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </reviews_2:Battery>
+      <owl:Class rdf:about="#Body"/>
+      <owl:Class rdf:about="#Camera"/>
+      <owl:Class rdf:about="#Display"/>
+      <owl:Class rdf:about="#Memory"/>
+      <owl:Class rdf:about="#Platform"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <reviews_2:Review rdf:ID="xx">
+    <reviews_2:isAbout rdf:resource="#Battery"/>
+    <reviews_2:comment>great battery</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <reviews_2:Review rdf:ID="sample1">
+    <reviews_2:isAbout rdf:resource="#amoled"/>
+    <reviews_2:comment>sample1</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <reviews_2:Review rdf:ID="fCameraReview">
+    <reviews_2:isAbout rdf:resource="#frontCamera"/>
+    <reviews_2:comment>awesome</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <owl:AllDisjointClasses>
+    <owl:members rdf:parseType="Collection">
+      <reviews_2:Battery rdf:about="#Battery"/>
+      <owl:Class rdf:about="#Body"/>
+      <owl:Class rdf:about="#Camera"/>
+      <owl:Class rdf:about="#Display"/>
+      <owl:Class rdf:about="#Memory"/>
+      <owl:Class rdf:about="#Platform"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <reviews_2:Review rdf:ID="sampleReview">
+    <reviews_2:isAbout rdf:resource="#amoled"/>
+    <reviews_2:comment>Sample comment</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >3</reviews_2:rating>
+  </reviews_2:Review>
+  <reviews_2:Review rdf:ID="sample2">
+    <reviews_2:isAbout rdf:resource="#amoled"/>
+    <reviews_2:comment>sample2</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <reviews_2:Review rdf:ID="tt">
+    <reviews_2:isAbout rdf:resource="#amoled"/>
+    <reviews_2:comment>nice one</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >3</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+  <reviews_2:Display rdf:ID="OLED">
+    <reviews_2:type>OLED</reviews_2:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Display>
+  <reviews_2:Review rdf:ID="tt2">
+    <reviews_2:isAbout rdf:resource="#amoled"/>
+    <reviews_2:comment>dfgh</reviews_2:comment>
+    <reviews_2:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</reviews_2:rating>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </reviews_2:Review>
+</rdf:RDF>

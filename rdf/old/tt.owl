@@ -1,0 +1,294 @@
+@prefix : <http://review-analyzer.local/ontologies/reviews_2.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reviews_2: <http://review-analyzer.local/ontologies/reviews_2.owl#> .
+@base <http://review-analyzer.local/ontologies/reviews_2.owl> .
+
+<http://review-analyzer.local/ontologies/reviews_2.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#isAbout
+
+:isAbout rdf:type owl:FunctionalProperty ,
+                  owl:ObjectProperty ;
+         
+         rdfs:range :Feature ;
+         
+         rdfs:domain :Review .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#comment
+
+:comment rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         
+         rdfs:domain :Review ;
+         
+         rdfs:range xsd:string .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#rating
+
+:rating rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        
+        rdfs:domain :Review ;
+        
+        rdfs:range xsd:integer .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#type
+
+:type rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      
+      rdfs:domain :Feature .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Battery
+
+:Battery rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Body
+
+:Body rdf:type owl:Class ;
+      
+      rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Camera
+
+:Camera rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Display
+
+:Display rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Feature
+
+:Feature rdf:type owl:Class .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Memory
+
+:Memory rdf:type owl:Class ;
+        
+        rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Platform
+
+:Platform rdf:type owl:Class ;
+          
+          rdfs:subClassOf :Feature .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Review
+
+:Review rdf:type owl:Class .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#front
+
+:front rdf:type owl:Class ;
+       
+       rdfs:subClassOf :Camera .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#Battery
+
+:Battery rdf:type :Battery ,
+                  owl:NamedIndividual ;
+         
+         :type "battery"^^xsd:string .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#OLED
+
+:OLED rdf:type :Display ,
+               owl:NamedIndividual ;
+      
+      :type "OLED"^^xsd:string .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#amoled
+
+:amoled rdf:type :Display ,
+                 owl:NamedIndividual ;
+        
+        :type "amoled"^^xsd:string .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#fCameraReview
+
+:fCameraReview rdf:type :Review ,
+                        owl:NamedIndividual ;
+               
+               :rating 3 ;
+               
+               :comment "awesome"^^xsd:string ;
+               
+               :isAbout :frontCamera .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#frontCamera
+
+:frontCamera rdf:type :front ,
+                      owl:NamedIndividual ;
+             
+             :type "front camera"^^xsd:string .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#review
+
+:review rdf:type :Review ,
+                 owl:NamedIndividual ;
+        
+        :rating 3 ;
+        
+        :comment "great"^^xsd:string ;
+        
+        :isAbout :amoled .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#tt
+
+:tt rdf:type :Review ,
+             owl:NamedIndividual ;
+    
+    :rating 3 ;
+    
+    :comment "nice one"^^xsd:string ;
+    
+    :isAbout :amoled .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#tt2
+
+:tt2 rdf:type :Review ,
+              owl:NamedIndividual ;
+     
+     :rating 2 ;
+     
+     :comment "dfgh"^^xsd:string ;
+     
+     :isAbout :amoled .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#xx
+
+:xx rdf:type :Review ,
+             owl:NamedIndividual ;
+    
+    :rating 4 ;
+    
+    :comment "great battery"^^xsd:string ;
+    
+    :isAbout :Battery .
+
+
+
+###  http://review-analyzer.local/ontologies/reviews_2.owl#xx2
+
+:xx2 rdf:type :Review ,
+              owl:NamedIndividual ;
+     
+     :rating 1 ;
+     
+     :comment "fghjk"^^xsd:string ;
+     
+     :isAbout :frontCamera .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Battery
+                :Body
+                :Camera
+                :Display
+                :Memory
+                :Platform
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

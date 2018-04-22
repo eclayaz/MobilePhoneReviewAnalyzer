@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY reviews_2 "http://review-analyzer.local/ontologies/reviews_2.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://review-analyzer.local/ontologies/reviews_2.owl#"
+     xml:base="http://review-analyzer.local/ontologies/reviews_2.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:reviews_2="http://review-analyzer.local/ontologies/reviews_2.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://review-analyzer.local/ontologies/reviews_2.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#isAbout -->
+
+    <owl:ObjectProperty rdf:about="&reviews_2;isAbout">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&reviews_2;Feature"/>
+        <rdfs:domain rdf:resource="&reviews_2;Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#comment -->
+
+    <owl:DatatypeProperty rdf:about="&reviews_2;comment">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&reviews_2;Review"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#rating -->
+
+    <owl:DatatypeProperty rdf:about="&reviews_2;rating">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&reviews_2;Review"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#type -->
+
+    <owl:DatatypeProperty rdf:about="&reviews_2;type">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&reviews_2;Feature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Battery -->
+
+    <owl:Class rdf:about="&reviews_2;Battery">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Body -->
+
+    <owl:Class rdf:about="&reviews_2;Body">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Camera -->
+
+    <owl:Class rdf:about="&reviews_2;Camera">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Display -->
+
+    <owl:Class rdf:about="&reviews_2;Display">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Feature -->
+
+    <owl:Class rdf:about="&reviews_2;Feature"/>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Memory -->
+
+    <owl:Class rdf:about="&reviews_2;Memory">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Platform -->
+
+    <owl:Class rdf:about="&reviews_2;Platform">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Review -->
+
+    <owl:Class rdf:about="&reviews_2;Review"/>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#front -->
+
+    <owl:Class rdf:about="&reviews_2;front">
+        <rdfs:subClassOf rdf:resource="&reviews_2;Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#Battery -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;Battery">
+        <rdf:type rdf:resource="&reviews_2;Battery"/>
+        <type rdf:datatype="&xsd;string">battery</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#OLED -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;OLED">
+        <rdf:type rdf:resource="&reviews_2;Display"/>
+        <type rdf:datatype="&xsd;string">OLED</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#amoled -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;amoled">
+        <rdf:type rdf:resource="&reviews_2;Display"/>
+        <type rdf:datatype="&xsd;string">amoled</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#fCameraReview -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;fCameraReview">
+        <rdf:type rdf:resource="&reviews_2;Review"/>
+        <rating rdf:datatype="&xsd;integer">3</rating>
+        <comment rdf:datatype="&xsd;string">awesome</comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#sample1 -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;sample1">
+        <rdf:type rdf:resource="&reviews_2;Review"/>
+        <rating rdf:datatype="&xsd;integer">3</rating>
+        <comment rdf:datatype="&xsd;string">sample1</comment>
+        <isAbout rdf:resource="&reviews_2;amoled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/reviews_2.owl#sample2 -->
+
+    <owl:NamedIndividual rdf:about="&reviews_2;sample2">
+        <rdf:type rdf:resource="&reviews_2;Review"/>
+        <rating rdf:datatype="&xsd;integer">2</rating>
+        <comment rdf:datatype="&xsd;string">sample2</comment>
+        <isAbout rdf:resource="&reviews_2;amoled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&reviews_2;Battery"/>
+            <rdf:Description rdf:about="&reviews_2;Body"/>
+            <rdf:Description rdf:about="&reviews_2;Camera"/>
+            <rdf:Description rdf:about="&reviews_2;Display"/>
+            <rdf:Description rdf:about="&reviews_2;Memory"/>
+            <rdf:Description rdf:about="&reviews_2;Platform"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

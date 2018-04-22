@@ -1,0 +1,753 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY mobile_phone "http://review-analyzer.local/ontologies/mobile_phone.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2018/3/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2018/3/untitled-ontology-23"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mobile_phone="http://review-analyzer.local/ontologies/mobile_phone.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://review-analyzer.local/ontologies/mobile_phone.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="&mobile_phone;hasFeature">
+        <rdfs:range rdf:resource="&mobile_phone;Feature"/>
+        <rdfs:domain rdf:resource="&mobile_phone;Phone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#isAbout -->
+
+    <owl:ObjectProperty rdf:about="&mobile_phone;isAbout">
+        <rdfs:range rdf:resource="&mobile_phone;Feature"/>
+        <rdfs:domain rdf:resource="&mobile_phone;Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#reviewOf -->
+
+    <owl:ObjectProperty rdf:about="&mobile_phone;reviewOf">
+        <rdfs:range rdf:resource="&mobile_phone;Phone"/>
+        <rdfs:domain rdf:resource="&mobile_phone;Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#brand -->
+
+    <owl:DatatypeProperty rdf:about="&mobile_phone;brand">
+        <rdfs:domain rdf:resource="&mobile_phone;Phone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#comment -->
+
+    <owl:DatatypeProperty rdf:about="&mobile_phone;comment">
+        <rdfs:domain rdf:resource="&mobile_phone;Review"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="&mobile_phone;name">
+        <rdfs:domain rdf:resource="&mobile_phone;Phone"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#price -->
+
+    <owl:DatatypeProperty rdf:about="&mobile_phone;price">
+        <rdfs:domain rdf:resource="&mobile_phone;Phone"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#rating -->
+
+    <owl:DatatypeProperty rdf:about="&mobile_phone;rating">
+        <rdfs:domain rdf:resource="&mobile_phone;Review"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Amoled -->
+
+    <owl:Class rdf:about="&mobile_phone;Amoled">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;LED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Android -->
+
+    <owl:Class rdf:about="&mobile_phone;Android">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#BackCamera -->
+
+    <owl:Class rdf:about="&mobile_phone;BackCamera">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Camera"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;FrontCamera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Battery -->
+
+    <owl:Class rdf:about="&mobile_phone;Battery">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#BatteryType -->
+
+    <owl:Class rdf:about="&mobile_phone;BatteryType">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Battery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Body -->
+
+    <owl:Class rdf:about="&mobile_phone;Body">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Camera -->
+
+    <owl:Class rdf:about="&mobile_phone;Camera">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Color -->
+
+    <owl:Class rdf:about="&mobile_phone;Color">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Dimension -->
+
+    <owl:Class rdf:about="&mobile_phone;Dimension">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Display -->
+
+    <owl:Class rdf:about="&mobile_phone;Display">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#DualSIM -->
+
+    <owl:Class rdf:about="&mobile_phone;DualSIM">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;SIM"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;SingleSIM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#External -->
+
+    <owl:Class rdf:about="&mobile_phone;External">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Memory"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;Internal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Feature -->
+
+    <owl:Class rdf:about="&mobile_phone;Feature">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#FrontCamera -->
+
+    <owl:Class rdf:about="&mobile_phone;FrontCamera">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Internal -->
+
+    <owl:Class rdf:about="&mobile_phone;Internal">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Memory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#LCD -->
+
+    <owl:Class rdf:about="&mobile_phone;LCD">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Display"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;LED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#LED -->
+
+    <owl:Class rdf:about="&mobile_phone;LED">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Display"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#LiIon -->
+
+    <owl:Class rdf:about="&mobile_phone;LiIon">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Materials"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;NiMH"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Materials -->
+
+    <owl:Class rdf:about="&mobile_phone;Materials">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Battery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Memory -->
+
+    <owl:Class rdf:about="&mobile_phone;Memory">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#NiMH -->
+
+    <owl:Class rdf:about="&mobile_phone;NiMH">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#NonRemovable -->
+
+    <owl:Class rdf:about="&mobile_phone;NonRemovable">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;BatteryType"/>
+        <owl:disjointWith rdf:resource="&mobile_phone;Removable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Phone -->
+
+    <owl:Class rdf:about="&mobile_phone;Phone">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Platform -->
+
+    <owl:Class rdf:about="&mobile_phone;Platform">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Removable -->
+
+    <owl:Class rdf:about="&mobile_phone;Removable">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;BatteryType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Retina -->
+
+    <owl:Class rdf:about="&mobile_phone;Retina">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;LED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Review -->
+
+    <owl:Class rdf:about="&mobile_phone;Review">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#SIM -->
+
+    <owl:Class rdf:about="&mobile_phone;SIM">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#SingleSIM -->
+
+    <owl:Class rdf:about="&mobile_phone;SingleSIM">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;SIM"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#SuperAmoled -->
+
+    <owl:Class rdf:about="&mobile_phone;SuperAmoled">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;LED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#SuperAmoledPlus -->
+
+    <owl:Class rdf:about="&mobile_phone;SuperAmoledPlus">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;LED"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#Windows -->
+
+    <owl:Class rdf:about="&mobile_phone;Windows">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#iOS -->
+
+    <owl:Class rdf:about="&mobile_phone;iOS">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#iPhone5C -->
+
+    <owl:Class rdf:about="&mobile_phone;iPhone5C">
+        <rdfs:subClassOf rdf:resource="&mobile_phone;Phone"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#amoled -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;amoled">
+        <rdf:type rdf:resource="&mobile_phone;Amoled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#android -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;android">
+        <rdf:type rdf:resource="&mobile_phone;Android"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#back_camera -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;back_camera">
+        <rdf:type rdf:resource="&mobile_phone;BackCamera"/>
+        <owl:sameAs rdf:resource="&mobile_phone;primary_camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#battery -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;battery">
+        <rdf:type rdf:resource="&mobile_phone;Battery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#black -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;black">
+        <rdf:type rdf:resource="&mobile_phone;Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#body -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;body">
+        <rdf:type rdf:resource="&mobile_phone;Body"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#camera -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;camera">
+        <rdf:type rdf:resource="&mobile_phone;Camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#display -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;display">
+        <rdf:type rdf:resource="&mobile_phone;Display"/>
+        <owl:sameAs rdf:resource="&mobile_phone;screen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#dual_sim -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;dual_sim">
+        <rdf:type rdf:resource="&mobile_phone;DualSIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#external -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;external">
+        <rdf:type rdf:resource="&mobile_phone;External"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#front_camera -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;front_camera">
+        <rdf:type rdf:resource="&mobile_phone;FrontCamera"/>
+        <owl:sameAs rdf:resource="&mobile_phone;selfie_camera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#internal -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;internal">
+        <rdf:type rdf:resource="&mobile_phone;Internal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#ios -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;ios">
+        <rdf:type rdf:resource="&mobile_phone;iOS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#iphone5c -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;iphone5c">
+        <rdf:type rdf:resource="&mobile_phone;iPhone5C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#lcd -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;lcd">
+        <rdf:type rdf:resource="&mobile_phone;LCD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#led -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;led">
+        <rdf:type rdf:resource="&mobile_phone;LED"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#liion -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;liion">
+        <rdf:type rdf:resource="&mobile_phone;LiIon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#memory -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;memory">
+        <rdf:type rdf:resource="&mobile_phone;Memory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#nimh -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;nimh">
+        <rdf:type rdf:resource="&mobile_phone;NiMH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#non_removable -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;non_removable">
+        <rdf:type rdf:resource="&mobile_phone;NonRemovable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#os -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;os">
+        <rdf:type rdf:resource="&mobile_phone;Platform"/>
+        <owl:sameAs rdf:resource="&mobile_phone;platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#platform -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;platform">
+        <rdf:type rdf:resource="&mobile_phone;Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#primary_camera -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;primary_camera">
+        <rdf:type rdf:resource="&mobile_phone;BackCamera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#removable -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;removable">
+        <rdf:type rdf:resource="&mobile_phone;Removable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#retina -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;retina">
+        <rdf:type rdf:resource="&mobile_phone;Retina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#sample_review -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;sample_review">
+        <rdf:type rdf:resource="&mobile_phone;Review"/>
+        <mobile_phone:rating rdf:datatype="&xsd;integer">2</mobile_phone:rating>
+        <mobile_phone:comment rdf:datatype="&xsd;string">sample comment</mobile_phone:comment>
+        <mobile_phone:isAbout rdf:resource="&mobile_phone;display"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#screen -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;screen">
+        <rdf:type rdf:resource="&mobile_phone;Display"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#selfie_camera -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;selfie_camera">
+        <rdf:type rdf:resource="&mobile_phone;FrontCamera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#sim -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;sim">
+        <rdf:type rdf:resource="&mobile_phone;SIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#single_sim -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;single_sim">
+        <rdf:type rdf:resource="&mobile_phone;SingleSIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#super_amoled -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;super_amoled">
+        <rdf:type rdf:resource="&mobile_phone;SuperAmoled"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#super_amoled_plus -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;super_amoled_plus">
+        <rdf:type rdf:resource="&mobile_phone;SuperAmoledPlus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#white -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;white">
+        <rdf:type rdf:resource="&mobile_phone;Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://review-analyzer.local/ontologies/mobile_phone.owl#windows -->
+
+    <owl:NamedIndividual rdf:about="&mobile_phone;windows">
+        <rdf:type rdf:resource="&mobile_phone;Windows"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&mobile_phone;Color"/>
+            <rdf:Description rdf:about="&mobile_phone;Dimension"/>
+            <rdf:Description rdf:about="&mobile_phone;SIM"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&mobile_phone;Battery"/>
+            <rdf:Description rdf:about="&mobile_phone;Body"/>
+            <rdf:Description rdf:about="&mobile_phone;Camera"/>
+            <rdf:Description rdf:about="&mobile_phone;Display"/>
+            <rdf:Description rdf:about="&mobile_phone;Memory"/>
+            <rdf:Description rdf:about="&mobile_phone;Platform"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&mobile_phone;Feature"/>
+            <rdf:Description rdf:about="&mobile_phone;Phone"/>
+            <rdf:Description rdf:about="&mobile_phone;Review"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&mobile_phone;Android"/>
+            <rdf:Description rdf:about="&mobile_phone;Windows"/>
+            <rdf:Description rdf:about="&mobile_phone;iOS"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&mobile_phone;Amoled"/>
+            <rdf:Description rdf:about="&mobile_phone;SuperAmoled"/>
+            <rdf:Description rdf:about="&mobile_phone;SuperAmoledPlus"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

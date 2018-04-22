@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vocab="http://localhost:2020/reviews_2/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:map="http://review-analyzer.local/ontologies/reviews_2.owl#"
+    xmlns:db="http://localhost:2020/"
+  xml:base="http://localhost:2020/" > 
+  <rdf:Description rdf:about="reviews_2/reviews_Rating">
+    <rdfs:label>reviews Rating</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews_2/reviews">
+    <rdfs:label>reviews</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews_2/reviews_ID">
+    <rdfs:label>reviews ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews/3">
+    <vocab:reviews_Category>OLED</vocab:reviews_Category>
+    <vocab:reviews_Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:reviews_Rating>
+    <vocab:reviews_Review>wow</vocab:reviews_Review>
+    <vocab:reviews_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:reviews_ID>
+    <rdfs:label>reviews #3</rdfs:label>
+    <rdf:type rdf:resource="reviews_2/reviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews_2/reviews_Review">
+    <rdfs:label>reviews Review</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews/2">
+    <vocab:reviews_Category>amoled</vocab:reviews_Category>
+    <vocab:reviews_Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:reviews_Rating>
+    <vocab:reviews_Review>Geat one</vocab:reviews_Review>
+    <vocab:reviews_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:reviews_ID>
+    <rdfs:label>reviews #2</rdfs:label>
+    <rdf:type rdf:resource="reviews_2/reviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews/1">
+    <vocab:reviews_Category>amoled</vocab:reviews_Category>
+    <vocab:reviews_Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:reviews_Rating>
+    <vocab:reviews_Review>Geat one</vocab:reviews_Review>
+    <vocab:reviews_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:reviews_ID>
+    <rdfs:label>reviews #1</rdfs:label>
+    <rdf:type rdf:resource="reviews_2/reviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="reviews_2/reviews_Category">
+    <rdfs:label>reviews Category</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+</rdf:RDF>
